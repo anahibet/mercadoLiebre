@@ -1,0 +1,378 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+header p {
+    text-align: center;
+}
+
+.top-header {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.logo {
+    width: 50%;
+    padding: 10px;
+}
+
+.buscador {
+    width: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+header nav ul li a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+header nav ul {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 42%;
+}
+
+
+header .buscador .input {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+}
+
+header .buscador .lupa i {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #666;
+}
+
+header div.burger-menu i {
+    color: #fff;
+    background-color: #1259c3;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border-radius: 5px;
+}
+
+header div.burger-menu {
+    text-align: center;
+}
+
+header {
+    width: 100vw;
+}
+
+.banner {
+    width: 100vw;
+}
+
+main {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+article {
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: content-box;
+    transition: all 0.5s;
+}
+
+main section article {
+    margin-bottom: 10px;
+    width: 45%;
+}
+
+main section article img {
+    width: 100%;
+}
+
+.info-article {
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.precio {
+    width: 30%;
+}
+
+.descuento {
+    width: 70%;
+}
+
+main section article div i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 0.5s;
+}
+
+.descripcion-producto {
+    display: none;
+    transition: all 0.5s;
+}
+
+
+footer .contenido div i {
+    padding-bottom: 10px;
+    font-size: 2em;
+    color: #03264C;
+    text-align: center;
+    
+}
+
+#Copyright {
+    text-align: left;
+
+}
+
+.contenido div i:hover {
+    color:blueviolet;
+}
+
+
+#formulario-registro {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+.formularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5px;
+    border-radius: 10%;
+   
+    
+}
+
+
+
+
+
+.Intereses input{
+    display: block;
+    text-align: left;
+  
+}
+.Intereses label {
+    display: block;
+    flex-direction: column;
+    text-align: right;
+   
+   
+}
+
+.botonIngresar{
+    width: 600px; 
+    height: 50px; 
+    font-size: 16px;
+    border-radius: 5px;
+    border-style:inherit;
+    padding: 10px;
+    margin:10px;
+    background-color: green;
+    color: #FFF;
+}
+
+
+.botonform {
+    width: 100px;
+    display:flex;
+    margin: 10px 20px;
+    border-radius: 5%;
+    padding: 5px;
+}
+
+.botonSubmit {
+    background-color: green;
+    color: #FFF;
+    display: inline-block;
+    
+   
+}
+
+.botonReset {
+    background-color: red;
+    color: #FFF;
+    display: inline-block;
+   
+}
+
+form div {
+    margin-bottom: 5px;
+    border-radius: 5%;
+    width: 100%;
+   
+}
+
+.text-field {
+    padding: 5px;
+}
+.password .text-field{
+    margin: 5px;
+}
+.formularios input{
+   
+    padding: 5px;
+}
+#formulario-login {
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.elecciones input{
+    width: 600px; 
+    height: 50px; 
+    font-size: 16px;
+    border-radius: 5px;
+    border-style:inherit;
+    padding: 5px;
+    margin:10px
+}
+
+.botonIngresar:hover{
+    background-color: #0022AA;
+}
+
+.botonform.botonSubmit:hover {
+    background-color: #0022AA;
+}
+.botonform.botonReset:hover {
+    background-color: #0022AA;
+}
+
+
+.password{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#Fotoperfil{
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width: 361px) {
+    .productos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .Ofertas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .descripcion-producto {
+        display: block
+    }
+
+    main section article {
+
+        width: 45%;
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header div.burger-menu {
+        display: none
+
+        
+    }
+ 
+    
+  
+    }
+
+@media(min-width: 769px) {
+    main section article {
+        width: 22.5%;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+    }
+
+    .descripcion-producto {
+        display: none;
+    }
+
+    article:hover .descripcion-producto {
+        display: block;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    article:hover i {
+        transform: rotate(-90deg);
+
+     
+    }
+
+    
+footer section.contenido {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    display: inline-block;
+    box-sizing: border-box;
+    flex-grow: 1;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+    width: 33%
+}
+}
