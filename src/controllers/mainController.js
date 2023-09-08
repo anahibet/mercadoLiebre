@@ -1,0 +1,18 @@
+const { json } = require('express');
+const fs= require('fs');
+const path= require('path')
+
+const datos= JSON.parse(fs.readFileSync(path.resolve(__dirname,'../database/products.json')));
+
+
+const mainController={
+index:(req,res)=>{
+const visitados=datos.filter((row)=>row.category=='visited');
+const ofertas=datos.filter((row)=>row.category=='in-sale');
+return res.render('home',{visitado:visitados,oferta:ofertas});
+}
+}
+
+
+
+module.exports= mainController;

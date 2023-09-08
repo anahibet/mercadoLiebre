@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include ('partials/head') %>
+
+<body>
+<%-include('partials/header')%>
+    <section>
+
+        <img class="banner" src="/images/img-home-banner.jpg" alt="img-home-banner">
+
+
+    </section>
+    <main>
+        <section>
+
+            <h3>Basado en tu última visita</h3>
+            <div class="productos">
+                <%visitado.forEach(row => {%>
+                    <article>
+                    <img src="/images/<%=row.image %>" alt="<%=row.image %>">
+                    <div class="info-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio"> $ <%=row.price %></p>
+                        <p class="descuento"><%=row.discount %>% off</p>
+                        <h4 class="descripcion-producto"><%=row.name %></h4>
+                    </div>
+                </article>
+           <% });%>
+            </div>
+
+        </section>
+
+
+
+        <section>
+            <h3>Sección de Ofertas</h3>
+            <div class="Ofertas">
+                <% oferta.forEach(row => {%>
+                    <article>
+                    <img src="/images/<%=row.image %>" alt="<%=row.image %>">
+                    <div class="info-article">
+                        <i class="fas fa-truck"></i>
+                        <p class="precio"> $ <%=row.price %></p>
+                        <p class="descuento"><%=row.discount %>% off</p>
+                        <h4 class="descripcion-producto"><%=row.name %></h4>
+                    </div>
+                </article>
+           <% });%>
+            </div>
+        </section>
+    </main>
+
+<%-include('partials/footer')%>
+</body>
+
+</html>

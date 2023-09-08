@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<%-include ('partials/head') %>
+
+<body>
+
+    <%-include('partials/header')%>
+   
+    <main id="formulario-registro">
+    <form class="formularios"action="/user/register" method="post">
+    <div>
+       <input type="text" name="nombreCompleto"placeholder="Nombre y apellido">
+     </div>
+    <div>
+         <input type="text" name="usuario"placeholder="Nombre de usuario">
+    </div>
+    <div>
+        <input type="Email"name="Email"placeholder="Email">
+    </div>
+    <div>
+    <label for="Nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="Nacimiento"name="Nacimiento">
+    </div>
+    
+    <div>
+        <input type="text"name="Domicilio"placeholder="Calle falsa 123">
+    </div>
+    <h3>Tipo de Perfil</h3>
+    <div class="selecciones">
+        <div> 
+            <input type="radio" name="Perfil"value="Comprador"id="Comprador">
+            <label for="Comprador">Comprador</label>
+        </div>
+        <div>
+            <input type="radio"name="perfil"value="Vendedor"id="Vendedor">
+        <label for="Vendedor">Vendedor</label>
+        </div>
+       
+        
+    </div>
+    <h3>Intereses</h3>
+    <div class="Intereses">
+        <input type="checkbox"name="interes"value="Electro"id="Electro">
+        <label for="Electro">Electro</label>
+        <input type="checkbox"name="interes"value="Moda"id="Moda">
+        <label for="Moda">Moda</label>
+        <input type="checkbox"name="interes"value="Hogar"id="Hogar">
+        <label for="Hogar">Hogar</label>
+        <input type="checkbox"name="interes"value="Jugueteria" id="Jugueteria">
+        <label for="Jugueteria">Jugueteria</label>
+        <input type="checkbox"name="interes"value="Vidasana"id="Vidasana">
+        <label for="Vidasana">Vida sana</label>
+    </div>
+    <div class="perfil">
+        <label for="Fotoperfil">Foto de usuario</label>
+        <input type="file"name="Fotoperfil"id="Fotoperfil">
+   </div>
+   <div class="password">
+        <input class="text-field" type="password"name="Contrasenia"placeholder="Contrasenia">
+   
+        <input class="text-field" type="password"name="ContraseniaConfirmar"placeholder="ContraseniaConfirmar">
+    </div>
+        <div>   
+
+      <button class="botonform botonSubmit" type="submit">Enviar</button>
+      <button class= " botonform botonReset" type="reset">Cancelar</button>
+    </div>
+ 
+       </form>
+
+
+
+
+    </main>
+
+    
+<%-include('partials/footer')%>
+</body>
+
+</html>
